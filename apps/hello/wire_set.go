@@ -6,7 +6,7 @@ import (
 )
 
 var HelloSchemaSet = wire.NewSet(
-	access.NewHelloApp(),
+	access.NewHelloApp,
 )
 
 var HelloSet = wire.NewSet(
