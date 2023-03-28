@@ -8,12 +8,8 @@ import (
 func main() {
 	engine := gin.Default()
 	gin.Recovery()
-	app, err := InitializeApplication()
-	if err != nil {
-		fmt.Printf("InitializeApplication failed, err = %v", err)
-		return
-	}
-	if e := app.Register(engine); e != nil { // register urls of all app
+	_ = engine.SetTrustedProxies(nil)
+	if e := InitApp(engine); e != nil { // register urls of all app
 		fmt.Printf("Application register failed, err = %v", e)
 		return
 	}

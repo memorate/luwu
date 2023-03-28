@@ -16,10 +16,10 @@ import (
 
 func InitializeApplication() (application, error) {
 	helloApp := access.NewHelloApp()
-	http_serverApplication := application{
+	mainApplication := application{
 		helloApp: helloApp,
 	}
-	return http_serverApplication, nil
+	return mainApplication, nil
 }
 
 // wire.go:
@@ -31,4 +31,12 @@ type application struct {
 func (app *application) Register(engine *gin.Engine) error {
 	router.RegisterSchema("rest", app.helloApp)
 	return router.RegisterUrlPatterns(engine)
+}
+
+func InitApp(engine *gin.Engine) error {
+	app, err := InitializeApplication()
+	if err != nil {
+		return err
+	}
+	return app.Register(engine)
 }

@@ -27,3 +27,11 @@ func InitializeApplication() (application, error) {
 	)
 	return application{}, nil
 }
+
+func InitApp(engine *gin.Engine) error {
+	app, err := InitializeApplication()
+	if err != nil {
+		return err
+	}
+	return app.Register(engine)
+}

@@ -1,4 +1,4 @@
-module gin-practice
+module luwu
 
 go 1.16
 
