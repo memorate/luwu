@@ -1,8 +1,8 @@
 package access
 
 import (
-	"gin-practice/libs/error"
 	"github.com/gin-gonic/gin"
+	"luwu/libs/error"
 )
 
 type HelloApp struct {

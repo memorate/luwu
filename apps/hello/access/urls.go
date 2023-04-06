@@ -1,12 +1,12 @@
 package access
 
 import (
-	"gin-practice/libs/router"
+	"luwu/libs/router"
 )
 
 func (h *HelloApp) URLPatterns() []router.Route {
 	var routers []router.Route
-	group := router.NewRouterGroup("/gin_practice")
+	group := router.NewRouterGroup("/luwu")
 	{
 		route := group.Group("/hello")
 		{

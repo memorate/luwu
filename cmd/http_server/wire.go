@@ -4,11 +4,11 @@
 package main
 
 import (
-	"gin-practice/apps/hello"
-	"gin-practice/apps/hello/access"
-	"gin-practice/libs/router"
 	"github.com/gin-gonic/gin"
 	"github.com/google/wire"
+	"luwu/apps/hello"
+	"luwu/apps/hello/access"
+	"luwu/libs/router"
 )
 
 type application struct {

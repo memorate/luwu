@@ -1,6 +1,6 @@
 package http
 
-import "gin-practice/libs/error"
+import "luwu/libs/error"
 
 type Response struct {
 	error.Error

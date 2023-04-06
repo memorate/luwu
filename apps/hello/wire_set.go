@@ -1,8 +1,8 @@
 package hello
 
 import (
-	"gin-practice/apps/hello/access"
 	"github.com/google/wire"
+	"luwu/apps/hello/access"
 )
 
 var HelloSchemaSet = wire.NewSet(

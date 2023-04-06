@@ -3,7 +3,7 @@ package access
 import (
 	"context"
 	"fmt"
-	"luwu-protobuf/hello_protobuf"
+	"github.com/memorate/luwu-protobuf/hello_protobuf"
 )
 
 type HelloGrpcApp struct {

@@ -7,9 +7,9 @@
 package main
 
 import (
-	"gin-practice/apps/hello/access"
-	"gin-practice/libs/router"
 	"github.com/gin-gonic/gin"
+	"luwu/apps/hello/access"
+	"luwu/libs/router"
 )
 
 // Injectors from wire.go:

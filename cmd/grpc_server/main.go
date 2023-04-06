@@ -1,11 +1,11 @@
-package grpc_server
+package main
 
 import (
-	"gin-practice/apps/hello/access"
+	"github.com/memorate/luwu-protobuf/hello_protobuf"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 	"log"
-	"luwu-protobuf/hello_protobuf"
+	"luwu/apps/hello/access"
 	"net"
 )
 

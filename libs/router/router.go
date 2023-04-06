@@ -2,10 +2,10 @@ package router
 
 import (
 	"fmt"
-	"gin-practice/common/constant"
-	errorLib "gin-practice/libs/error"
-	httpLib "gin-practice/libs/http"
 	"github.com/gin-gonic/gin"
+	"luwu/common/constant"
+	errorLib "luwu/libs/error"
+	httpLib "luwu/libs/http"
 	"net/http"
 	"reflect"
 	"sync"
